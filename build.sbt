@@ -13,6 +13,8 @@ val moduleCrossPlatformMatrix: Map[String, List[Platform]] = Map(
   "plugin" -> List(JVMPlatform)
 )
 
+ThisBuild / scalafixDependencies += "com.github.liancheng" %% "organize-imports" % "0.3.0"
+
 /// projects
 
 lazy val root = project
